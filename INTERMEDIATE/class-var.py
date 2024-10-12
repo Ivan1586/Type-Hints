@@ -1,0 +1,15 @@
+"""
+Class `Foo` has a class variable `bar`, which is an integer.
+"""
+
+from typing import ClassVar
+
+
+class Foo:
+    bar: ClassVar[int]
+    """Hint: No need to write __init__"""
+
+
+Foo.bar = 1
+Foo.bar = "1"  # pyright: ignore
+Foo().bar = 1  # pyright: ignore
