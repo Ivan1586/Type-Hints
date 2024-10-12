@@ -26,4 +26,4 @@ jobs:
         run: |
           poetry run black --check BASIC/ INTERMEDIATE/
           poetry run isort --check BASIC/ INTERMEDIATE/
-          poetry run pyright src/log_analyzer.py
+          poetry run pyright BASIC/ INTERMEDIATE/
